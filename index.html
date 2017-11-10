@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>trackster</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="reset.css">  
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+      <div class="row header" >
+
+          <div class="col-xs-1"></div>
+          <div class="col-xs-6">
+                <h1>trackster</h1>
+          </div>
+          <div class="col=xs-1">
+            <h4>Title</h4>
+          </div>
+          <div class="col-xs-2">            
+            <input type="text" id="title">              
+          </div>
+
+          <div class="col-xs-1">
+              <div class="button" id="search"> 
+                <i class="fa fa-search fa-2x"></i> 
+              </div>  
+          </div> 
+           <div class="col-xs-1"></div>
+
+    </div>
+
+    <div class="row">
+      <div class="headings">        
+            <span class="col-xs-1"></span>    
+            <span class="col-xs-4"># Song</span>
+            <span class="col-xs-4">Artist</span>   
+             <span class="col-xs-1">Popularity</span>        
+            <span class="col-xs-2">Album</span>     
+              
+      </div> 
+      <div id="error"></div>
+    </div>
+
+    <div class="container" id="result"></div>        
+       
+  </div>  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>        
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="tests.js"></script>
+
+</body>
+</html>
