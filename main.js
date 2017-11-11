@@ -31,11 +31,11 @@ Trackster.renderTracks = function(tracks) {
 			let track  = 		
 			'<div class="row track">' +     
 		    '<span class="col-xs-1"><i class="fa fa-play-circle fa-1x"></i> </span>' +           
-            '<span class="col-xs-4">' + j  + "  " + tracks[i].name + '</span>' +
+            '<span class="col-xs-5">' + j  + "  " + tracks[i].name + '</span>' +
             '<span class="col-xs-4">' + tracks[i].artist + '</span>' +   
          //   '<span class="col-xs-1">'+ tracks[i].listeners+'</span> ' +
             '<span class="col-xs-1">' + $listeners+ '</span> ' +
-            '<span class="col-xs-2"> <a href=" ' + tracks[i].image[0]["#text"] + '">Album</a></span>' +              
+            '<span class="col-xs-1"> <a href=" ' + tracks[i].image[0]["#text"] + '">Album</a></span>' +              
             '</div>';
             
         // console.log(track);
@@ -69,7 +69,7 @@ Trackster.searchTracksByTitle = function(title) {
 	 	
 	  $.ajax({
         type : 'GET',
-        url : 'http://ws.audioscrobbler.com/2.0/',
+        url : 'https://ws.audioscrobbler.com/2.0/',
         data : 'method=track.search&' +
                'track='+ title + '&' +
                'api_key=57ee3318536b23ee81d6b27e36997cde&' +
